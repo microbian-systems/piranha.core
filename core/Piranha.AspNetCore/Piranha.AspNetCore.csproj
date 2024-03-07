@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <Description>Piranha CMS middleware components for AspNetCore</Description>
@@ -13,14 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.3" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="all" />
-    <PackageReference Include="xsitemap" Version="2.7.0" />
     <ProjectReference Include="..\Piranha\Piranha.csproj" />
+    <ProjectReference Include="..\Piranha.AspNetCore.Hosting\Piranha.AspNetCore.Hosting.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Piranha.AspNetCore.Hosting\Piranha.AspNetCore.Hosting.csproj" />
+    <PackageReference Include="xsitemap" Version="2.9.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.0" />
   </ItemGroup>
 
 </Project>
