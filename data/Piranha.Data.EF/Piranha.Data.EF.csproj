@@ -3,6 +3,7 @@
   <PropertyGroup>
     <NoWarn>$(NoWarn);1591</NoWarn>
     <Description>Data components for Entity Framework Core</Description>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,7 +22,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.4"  />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4"  />
   </ItemGroup>
 
   <ItemGroup>
